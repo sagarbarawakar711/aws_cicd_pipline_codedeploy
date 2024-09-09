@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo systemctl stop codedeploy-agent
+sleep 60
+sudo systemctl start codedeploy-agent
 sudo apt install -y apache2
 rm -f /var/www/html/index.html
 
